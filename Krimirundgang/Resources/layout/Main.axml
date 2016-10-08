@@ -17,5 +17,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:visibility="invisible" />
+        tools:visibility="invisible"
+        android:visibility="invisible" />
 </LinearLayout>

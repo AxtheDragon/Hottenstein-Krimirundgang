@@ -1,6 +1,11 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
+using Android.Runtime;
+using Android.Views;
+
 
 namespace Krimirundgang
 {
@@ -21,7 +26,7 @@ namespace Krimirundgang
             //Simple Button click event
             firstButton.Click += (object sender, EventArgs e) =>
             {
-                text.Visibility = visible;
+
             };
         }
     }
