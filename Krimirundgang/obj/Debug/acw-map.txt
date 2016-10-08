@@ -1,4 +1,0 @@
-Krimirundgang.MainActivity, Krimirundgang;md53179f687ea3e6beb33fd9b886e7c912c.MainActivity
-Krimirundgang.MainActivity, Krimirundgang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53179f687ea3e6beb33fd9b886e7c912c.MainActivity
-Krimirundgang.MainActivity;md53179f687ea3e6beb33fd9b886e7c912c.MainActivity
-krimirundgang.MainActivity;md53179f687ea3e6beb33fd9b886e7c912c.MainActivity
