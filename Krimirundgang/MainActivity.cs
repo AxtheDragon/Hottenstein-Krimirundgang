@@ -26,7 +26,7 @@ namespace Krimirundgang
             //Simple Button click event
             firstButton.Click += (object sender, EventArgs e) =>
             {
-
+                text.Visibility = ViewStates.Visible;
             };
         }
     }
