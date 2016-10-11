@@ -5,21 +5,10 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <Button
-        android:text="Klick mich!"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button1" />
     <TextView
-        android:text="Überschrift"
+        android:text="Das ist die zweite Seite"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:visibility="invisible" />
-    <Button
-        android:text="Next Screen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/next" />
+        android:id="@+id/textView1" />
 </LinearLayout>
