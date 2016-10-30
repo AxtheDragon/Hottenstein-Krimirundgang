@@ -55,6 +55,10 @@ Temporary Items
 *.userosscache
 *.sln.docstates
 
+# Auto generated file
+Krimirundgang/Resources/Resource.Designer.cs
+
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
