@@ -69,6 +69,7 @@ namespace Krimirundgang
             TextView latitude = FindViewById<TextView>(Resource.Id.latitude);
             TextView longitude = FindViewById<TextView>(Resource.Id.longitude);
 
+            //display current location in the textview elements
             latitude.Text = "Latitude: " + location.Latitude;
             longitude.Text = "Longitude: " + location.Longitude;
         }
