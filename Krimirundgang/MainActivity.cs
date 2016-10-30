@@ -59,7 +59,7 @@ namespace Krimirundgang
             }
             else
             {
-                Log.Info(tag, Provider + " is not available. Does the device have location services enabled?");
+                Log.Info(null, Provider + " is not available. Does the device have location services enabled?");
             }
         }
 
@@ -75,17 +75,17 @@ namespace Krimirundgang
 
         public void OnProviderDisabled(string provider)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnProviderEnabled(string provider)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnStatusChanged(string provider, [GeneratedEnum] Availability status, Bundle extras)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
