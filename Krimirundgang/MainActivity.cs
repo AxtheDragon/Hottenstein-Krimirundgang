@@ -63,6 +63,13 @@ namespace Krimirundgang
             }
         }
 
+        protected override void OnPause()
+        {
+            base.OnPause();
+            //Stop updating GPS position when app is paused
+            locMgr.RemoveUpdates(this);
+        }
+
         public void OnLocationChanged(Location location)
         {
             //Get references to textviews that will display current location
