@@ -44,6 +44,23 @@ namespace Krimirundgang
                 StartActivity(intent);
             };
         }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+            //Choose GPS as used location service
+            string Provider = LocationManager.GpsProvider;
+
+            //request location updates every 2000 ms AND if location changes by <1 m
+            if (locMgr.IsProviderEnabled(Provider))
+            {
+                locMgr.RequestLocationUpdates(Provider, 2000, 1, this);
+            }
+            else
+            {
+                Log.Info(tag, Provider + " is not available. Does the device have location services enabled?");
+            }
+        }
     }
 }
 
