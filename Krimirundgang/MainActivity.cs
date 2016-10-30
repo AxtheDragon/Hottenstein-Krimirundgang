@@ -5,6 +5,7 @@ using Android.OS;
 using Android.Content;
 using Android.Runtime;
 using Android.Views;
+using Android.Locations;
 
 
 namespace Krimirundgang
@@ -18,6 +19,10 @@ namespace Krimirundgang
 
             // Set our view from the "main" layout resource
             SetContentView (Resource.Layout.Main);
+
+            //Setup location services
+            LocationManager locMgr;
+            locMgr = GetSystemService(Context.LocationService) as LocationManager;
 
             //Get references for Layout elements
             Button firstButton = FindViewById<Button>(Resource.Id.button1);
