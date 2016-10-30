@@ -6,7 +6,7 @@ using Android.Content;
 using Android.Runtime;
 using Android.Views;
 using Android.Locations;
-
+using Android.Util;
 
 namespace Krimirundgang
 {
