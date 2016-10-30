@@ -13,6 +13,8 @@ namespace Krimirundgang
     [Activity(Label = "Krimirundgang", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
+        //Setup location services
+        LocationManager locMgr;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -20,8 +22,7 @@ namespace Krimirundgang
             // Set our view from the "main" layout resource
             SetContentView (Resource.Layout.Main);
 
-            //Setup location services
-            LocationManager locMgr;
+            //Initialising location services
             locMgr = GetSystemService(Context.LocationService) as LocationManager;
 
             //Get references for Layout elements
