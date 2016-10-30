@@ -34,7 +34,8 @@ namespace Krimirundgang
             //shows second page but does not yet load secondActivity.cs
             secondPageButton.Click += (object sender, EventArgs e) =>
             {
-                SetContentView(Resource.Layout.second);
+                Intent intent = new Intent(this, typeof(secondActivity));
+                StartActivity(intent);
             };
         }
     }
