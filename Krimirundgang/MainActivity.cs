@@ -65,7 +65,12 @@ namespace Krimirundgang
 
         public void OnLocationChanged(Location location)
         {
-            throw new NotImplementedException();
+            //Get references to textviews that will display current location
+            TextView latitude = FindViewById<TextView>(Resource.Id.latitude);
+            TextView longitude = FindViewById<TextView>(Resource.Id.longitude);
+
+            latitude.Text = "Latitude: " + location.Latitude;
+            longitude.Text = "Longitude: " + location.Longitude;
         }
 
         public void OnProviderDisabled(string provider)
