@@ -11,10 +11,11 @@ using Android.Locations;
 namespace Krimirundgang
 {
     [Activity(Label = "Krimirundgang", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    public class MainActivity : Activity, ILocationListener
     {
         //Setup location services
         LocationManager locMgr;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -60,6 +61,26 @@ namespace Krimirundgang
             {
                 Log.Info(tag, Provider + " is not available. Does the device have location services enabled?");
             }
+        }
+
+        public void OnLocationChanged(Location location)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnProviderDisabled(string provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnProviderEnabled(string provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnStatusChanged(string provider, [GeneratedEnum] Availability status, Bundle extras)
+        {
+            throw new NotImplementedException();
         }
     }
 }
