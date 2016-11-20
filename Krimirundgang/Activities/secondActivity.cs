@@ -18,7 +18,7 @@ namespace Krimirundgang
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.tours.tour-foo.second);
+            SetContentView(Resource.Layout.tours.second);
 
             Button secondPageButton = FindViewById<Button>(Resource.Id.pagetwobutton);
             TextView text2 = FindViewById<TextView>(Resource.Id.textView2);
