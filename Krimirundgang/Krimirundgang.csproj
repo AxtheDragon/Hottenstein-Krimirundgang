@@ -78,12 +78,15 @@
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Activities\" />
     <Folder Include="Resources\drawable\drawable-hdpi\" />
     <Folder Include="Resources\drawable\drawable-ldpi\" />
     <Folder Include="Resources\drawable\drawable-mdpi\" />
     <Folder Include="Resources\drawable\drawable-xhdpi\" />
     <Folder Include="Resources\drawable\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable\drawable-xxxhdpi\" />
+    <Folder Include="Resources\layout\tours\tour-bar\" />
+    <Folder Include="Resources\layout\tours\tour-foo\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
