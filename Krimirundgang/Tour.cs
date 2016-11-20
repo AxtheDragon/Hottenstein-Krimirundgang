@@ -20,8 +20,8 @@ namespace Krimirundgang
 
         public Tour(string name, string content = null)
         {
-            this.Name = name;
-            this.Content = content;
+            Name = name;
+            Content = content;
         }
     }
 }
