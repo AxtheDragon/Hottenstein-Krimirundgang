@@ -72,10 +72,18 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\AndroidManifest.xml" />
+    <Folder Include="Resources\drawable\drawable-hdpi\" />
+    <Folder Include="Resources\drawable\drawable-ldpi\" />
+    <Folder Include="Resources\drawable\drawable-mdpi\" />
+    <Folder Include="Resources\drawable\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable\drawable-xxxhdpi\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
