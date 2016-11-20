@@ -68,6 +68,8 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\secondActivity.cs" />
+    <Compile Include="Tour.cs" />
+    <Compile Include="TourCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -89,7 +91,9 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
@@ -103,34 +107,34 @@
     <Folder Include="Resources\drawable\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-d.txt" />
+    <AndroidAsset Include="Assets\tours\tour-a.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-e.txt" />
+    <AndroidAsset Include="Assets\tours\tour-b.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-f.txt" />
+    <AndroidAsset Include="Assets\tours\tour-c.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-g.txt" />
+    <AndroidAsset Include="Assets\tours\tour-d.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-h.txt" />
+    <AndroidAsset Include="Assets\tours\tour-e.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-i.txt" />
+    <AndroidAsset Include="Assets\tours\tour-f.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-j.txt" />
+    <AndroidAsset Include="Assets\tours\tour-g.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-a.txt" />
+    <AndroidAsset Include="Assets\tours\tour-h.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-b.txt" />
+    <AndroidAsset Include="Assets\tours\tour-i.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tours\tour-c.txt" />
+    <AndroidAsset Include="Assets\tours\tour-j.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
