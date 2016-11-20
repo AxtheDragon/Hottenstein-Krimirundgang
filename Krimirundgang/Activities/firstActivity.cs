@@ -21,7 +21,7 @@ namespace Krimirundgang
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView (Resource.Layout.Main);
+            SetContentView (Resource.Layout.first);
 
             //Initialising location services
             locMgr = GetSystemService(Context.LocationService) as LocationManager;
