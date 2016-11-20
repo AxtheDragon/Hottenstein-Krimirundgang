@@ -11,7 +11,7 @@ using Android.Util;
 namespace Krimirundgang
 {
     [Activity(Label = "Krimirundgang", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity, ILocationListener
+    public class MainActivity : Activity
     {
         //Setup location services
         LocationManager locMgr;
