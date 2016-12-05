@@ -60,4 +60,17 @@ namespace Krimirundgang
         }
 
     }
+
+    public class Tour
+    {
+        static Stop[] mStops = {
+            new Stop {mStopID = 1,
+                      mTitle = "Erster Halt",
+                      mLat = 52.0001000,
+                      mLong = 40.300000,
+                      mText = System.Resources.ResourceManager.GetString(Resource.String.stop01)
+            }
+
+        };
+    }
 }
