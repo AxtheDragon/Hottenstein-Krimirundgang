@@ -89,36 +89,7 @@
     <Folder Include="Resources\drawable\drawable-xhdpi\" />
     <Folder Include="Resources\drawable\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable\drawable-xxxhdpi\" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\stop01.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\raw\stop02.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\raw\stop03.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\raw\stop04.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\raw\stop05.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\raw\stop06.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\raw\stop07.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\raw\stop08.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\raw\stop09.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Resources\raw\stop10.txt" />
+    <Folder Include="Resources\raw\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
