@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+using Android.Support.V7.Widget;
+
 namespace Krimirundgang
 {
     [Activity(Label = "TourActivity")]
@@ -19,8 +21,37 @@ namespace Krimirundgang
         {
             base.OnCreate(savedInstanceState);
 
+            //Prepare Data Source for Recycle View
+            mTour = new Tour();
+
+            //Prepare Adapter and pass it its contents
+            mAdapter = new TourAdapter(mTour);
+
             // Set our view from the "Tour" layout resource
             SetContentView(Resource.Layout.Tour);
+
+            //Get reference to recycler view
+            mRecyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
+
+            // Plug the adapter into the RecyclerView:
+            mRecyclerView.SetAdapter(mAdapter);
+
+            //Initialize Layout Manager
+            mLayoutManager = new LinearLayoutManager(this);
+            mRecyclerView.SetLayoutManager(mLayoutManager);
+        }
+    }
+
+    public class StopViewHolder : RecyclerView.ViewHolder
+    {
+        public TextView Title { get; private set; }
+        public TextView Preview { get; private set; }
+
+        public StopViewHolder(View itemView) : base(itemView)
+        {
+            // Locate and cache view references:
+            Title = itemView.FindViewById<TextView>(Resource.Id.imageView);
+            Caption = itemView.FindViewById<TextView>(Resource.Id.textView);
         }
     }
 }

@@ -66,7 +66,7 @@ namespace Krimirundgang
 
     public class Tour
     {
-        static Stop[] mStops = {
+        static Stop[] mStopList = {
             new Stop {mStopID = 1,
                       mTitle = "Erster Halt",
                       mLat = 52.0001000,
@@ -111,5 +111,20 @@ namespace Krimirundgang
             }
 
         };
+
+        //Array of the Stops that make up the Tour
+        private Stop[] mStops;
+
+        //Create and instance copy of the StopList
+         public Tour()
+        {
+            mStops = mStopList;
+        }
+
+        //Indexer (read only) for accessing the Stops
+        public Stop this[int i]
+        {
+            get { return mStops[i]; }
+
     }
 }
