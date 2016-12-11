@@ -57,10 +57,24 @@ namespace Krimirundgang
         public StopViewHolder(View itemView) : base(itemView)
         {
             // Locate and cache view references:
-            Title = itemView.FindViewById<TextView>(Resource.Id.imageView);
-            Caption = itemView.FindViewById<TextView>(Resource.Id.textView);
+            Title = itemView.FindViewById<TextView>(Resource.Id.textView1);
+            Preview = itemView.FindViewById<TextView>(Resource.Id.textView2);
         }
     }
 
-    public class TourAdapter
+    public class TourAdapter : RecyclerView.Adapter
+    {
+        // Event handler for item clicks:
+        public event EventHandler<int> ItemClick;
+
+        // Underlying data set (a Tour:
+        public Tour mTour;
+
+        // Load the adapter with the data set (tour) at construction time:
+        public TourAdapter(Tour myTour)
+        {
+            mTour = myTour;
+        }
+
+    }
 }
