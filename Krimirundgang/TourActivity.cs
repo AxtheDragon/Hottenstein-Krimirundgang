@@ -17,6 +17,13 @@ namespace Krimirundgang
     [Activity(Label = "TourActivity")]
     public class Activity1 : Activity
     {
+        RecyclerView mRecyclerView;
+        RecyclerView.LayoutManager mLayoutManager;
+
+        TourAdapter mAdapter;
+
+        Tour mTour;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -42,7 +49,7 @@ namespace Krimirundgang
         }
     }
 
-    public class StopViewHolder : RecyclerView.ViewHolder
+    public class StopViewHolder : Java.Lang.Object
     {
         public TextView Title { get; private set; }
         public TextView Preview { get; private set; }
@@ -54,4 +61,6 @@ namespace Krimirundgang
             Caption = itemView.FindViewById<TextView>(Resource.Id.textView);
         }
     }
+
+    public class TourAdapter
 }

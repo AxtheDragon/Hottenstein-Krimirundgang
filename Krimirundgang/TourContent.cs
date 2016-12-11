@@ -116,7 +116,7 @@ namespace Krimirundgang
         private Stop[] mStops;
 
         //Create and instance copy of the StopList
-         public Tour()
+        public Tour()
         {
             mStops = mStopList;
         }
@@ -126,5 +126,6 @@ namespace Krimirundgang
         {
             get { return mStops[i]; }
 
+        }
     }
 }
