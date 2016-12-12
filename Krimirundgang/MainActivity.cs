@@ -46,9 +46,9 @@ namespace Krimirundgang
             };
 
             //Event for startTourButton
-            secondPageButton.Click += (object sender, EventArgs e) =>
+            startTourButton.Click += (object sender, EventArgs e) =>
             {
-                Intent intent = new Intent(this, typeof(secondActivity));
+                Intent intent = new Intent(this, typeof(TourActivity));
                 StartActivity(intent);
             };
         }
