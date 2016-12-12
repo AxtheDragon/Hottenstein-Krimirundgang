@@ -98,7 +98,7 @@ namespace Krimirundgang
         {
             StopViewHolder viewHolder = holder as StopViewHolder;
 
-            // Set the ImageView and TextView in this ViewHolder's CardView 
+            // Set the both TexView's in this ViewHolder's StopCardView
             // from this position in the photo album:
             viewHolder.Title.Text = mTour[position].Title;
             viewHolder.Preview.Text = mTour[position].Preview;
