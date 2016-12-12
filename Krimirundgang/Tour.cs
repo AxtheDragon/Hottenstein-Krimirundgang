@@ -12,72 +12,15 @@ using Android.Widget;
 
 namespace Krimirundgang
 {
-    public class Stop
-    {
-        //Stop ID 
-        public int mStopID;
-
-        //Title of the stop
-        public string mTitle;
-
-        //Latitude of the Stop location
-        public double mLat;
-
-        //Longitude of the Stop location
-        public double mLong;
-
-        //Information Text of the Stop
-        public string mText;
-
-        //Preview Text
-        public string mPreview;
-
-        //return Stop ID
-        public int StopID
-        {
-            get { return mStopID; }
-        }
-
-        //return Stop Title
-        public string Title
-        {
-            get { return mTitle; }
-        }
-
-        //return Latitude
-        public double Lat
-        {
-            get { return mLat; }
-        }
-
-        //return Longitude
-        public double Long
-        {
-            get { return mLong; }
-        }
-
-        //return Text of the Stop
-        public string Text
-        {
-            get { return mText; }
-        }
-        //return Text of the Stop
-        public string Preview
-        {
-            get { return mPreview; }
-        }
-
-    }
-
-    public class Tour
+      public class Tour
     {
         static Stop[] mStopList = {
-            new Stop {mStopID = 1,
-                      mTitle = "Erster Halt",
-                      mLat = 52.0001000,
-                      mLong = 40.300000,
-                      mPreview = "01 Vorschautext für die Liste",
-                      mText = "01 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            new Stop {StopID = 1,
+                      Title = "Erster Halt",
+                      Lat = 52.0001000,
+                      Long = 40.300000,
+                      Preview = "01 Vorschautext für die Liste",
+                      Text = "01 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
             },
             new Stop {mStopID = 2,
                       mTitle = "Zweiter Halt",

@@ -67,7 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TourContent.cs" />
+    <Compile Include="Stop.cs" />
+    <Compile Include="Tour.cs" />
     <Compile Include="TourActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
