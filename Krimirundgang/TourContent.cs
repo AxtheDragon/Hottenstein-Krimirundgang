@@ -21,10 +21,10 @@ namespace Krimirundgang
         public string mTitle;
 
         //Latitude of the Stop location
-        public int mLat;
+        public double mLat;
 
         //Longitude of the Stop location
-        public int mLong;
+        public double mLong;
 
         //Information Text of the Stop
         public string mText;
@@ -45,13 +45,13 @@ namespace Krimirundgang
         }
 
         //return Latitude
-        public int Lat
+        public double Lat
         {
             get { return mLat; }
         }
 
         //return Longitude
-        public int Long
+        public double Long
         {
             get { return mLong; }
         }
@@ -61,7 +61,7 @@ namespace Krimirundgang
         {
             get { return mText; }
         }
-
+        
     }
 
     public class Tour
