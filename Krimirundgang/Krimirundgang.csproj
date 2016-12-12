@@ -69,6 +69,8 @@
   <ItemGroup>
     <Compile Include="Stop.cs" />
     <Compile Include="Tour.cs" />
+    <Compile Include="StopViewHolder.cs" />
+    <Compile Include="TourAdapter.cs" />
     <Compile Include="TourActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
