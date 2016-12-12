@@ -14,10 +14,6 @@ namespace Krimirundgang
 {
     public class Stop
     {
-        public Stop()
-        {
-
-        }
         //Stop ID 
         private readonly int mStopID;
         public int StopID { get { return mStopID; } }
@@ -41,5 +37,15 @@ namespace Krimirundgang
         //Preview Text
         private readonly string mPreview;
         public string Preview { get { return mPreview; } }
+
+        public Stop(int stopId, string title, double lat, double longitude, string text, string preview)
+        {
+            mStopID = StopID;
+            mTitle = title;
+            mLat = lat;
+            mLong = longitude;
+            mText = text;
+            mPreview = preview;
+        }
     }
 }
