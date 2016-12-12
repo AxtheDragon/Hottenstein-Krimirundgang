@@ -96,12 +96,12 @@ namespace Krimirundgang
         // Fill in the contents of the Stop card (invoked by the layout manager):
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
-            StopViewHolder vh = holder as StopViewHolder;
+            StopViewHolder viewHolder = holder as StopViewHolder;
 
             // Set the ImageView and TextView in this ViewHolder's CardView 
             // from this position in the photo album:
-            vh.Title.Text = mTour[position].Title;
-            vh.Preview.Text = mTour[position].Preview;
+            viewHolder.Title.Text = mTour[position].Title;
+            viewHolder.Preview.Text = mTour[position].Preview;
         }
 
         // Return the number of stops available in the tour:
