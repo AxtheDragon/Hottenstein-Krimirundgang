@@ -61,7 +61,12 @@ namespace Krimirundgang
         {
             get { return mText; }
         }
-        
+        //return Text of the Stop
+        public string Preview
+        {
+            get { return mPreview; }
+        }
+
     }
 
     public class Tour
@@ -126,6 +131,12 @@ namespace Krimirundgang
         {
             get { return mStops[i]; }
 
+        }
+
+        // Return the number of photos in the photo album:
+        public int NumStops
+        {
+            get { return mStops.Length; }
         }
     }
 }

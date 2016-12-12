@@ -76,5 +76,37 @@ namespace Krimirundgang
             mTour = myTour;
         }
 
+        // Create a new Stop CardView (invoked by the layout manager): 
+        public override RecyclerView.ViewHolder
+            OnCreateViewHolder(ViewGroup parent, int viewType)
+        {
+            // Inflate the CardView for the photo:
+            View itemView = LayoutInflater.From(parent.Context).
+                        Inflate(Resource.Layout.StopCardView, parent, false);
+
+            // Create a ViewHolder to find and hold these view references, and 
+            // register OnClick with the view holder:
+            StopViewHolder vh = new StopViewHolder(itemView, OnClick);
+            return vh;
+        }
+
+        // Fill in the contents of the Stop card (invoked by the layout manager):
+        public override void
+            OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
+        {
+            StopViewHolder vh = holder as StopViewHolder;
+
+            // Set the ImageView and TextView in this ViewHolder's CardView 
+            // from this position in the photo album:
+            vh.Title.Text = mTour[position].Title;
+            vh.Preview.Text = mTour[position].Preview;
+        }
+
+        // Return the number of photos available in the photo album:
+        public override int ItemCount
+        {
+            get { return mTour.NumStops; }
+        }
+
     }
 }
