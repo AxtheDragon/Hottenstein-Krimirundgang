@@ -59,6 +59,8 @@ namespace Krimirundgang
             // Locate and cache view references:
             Title = itemView.FindViewById<TextView>(Resource.Id.textView1);
             Preview = itemView.FindViewById<TextView>(Resource.Id.textView2);
+
+
         }
     }
 
@@ -86,7 +88,7 @@ namespace Krimirundgang
 
             // Create a ViewHolder to find and hold these view references, and 
             // register OnClick with the view holder:
-            StopViewHolder vh = new StopViewHolder(itemView, OnClick);
+            StopViewHolder vh = new StopViewHolder(itemView);
             return vh;
         }
 
