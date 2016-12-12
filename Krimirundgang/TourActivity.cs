@@ -90,8 +90,7 @@ namespace Krimirundgang
 
             // Create a ViewHolder to find and hold these view references, and 
             // register OnClick with the view holder:
-            StopViewHolder vh = new StopViewHolder(itemView);
-            return vh;
+            return new StopViewHolder(itemView);
         }
 
         // Fill in the contents of the Stop card (invoked by the layout manager):
