@@ -133,7 +133,7 @@ namespace Krimirundgang
 
         }
 
-        // Return the number of photos in the photo album:
+        // Return the number of stops in the stopList:
         public int NumStops
         {
             get { return mStops.Length; }
