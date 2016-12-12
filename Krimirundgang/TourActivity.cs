@@ -82,8 +82,11 @@ namespace Krimirundgang
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             // Inflate the CardView for the photo:
-            View itemView = LayoutInflater.From(parent.Context).
-                        Inflate(Resource.Layout.StopCardView, parent, false);
+            View itemView =
+                LayoutInflater.From(parent.Context)
+                              .Inflate(Resource.Layout.StopCardView,
+                                       parent,
+                                       false);
 
             // Create a ViewHolder to find and hold these view references, and 
             // register OnClick with the view holder:
