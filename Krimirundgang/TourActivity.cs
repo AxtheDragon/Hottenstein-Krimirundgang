@@ -15,7 +15,7 @@ using Android.Support.V7.Widget;
 namespace Krimirundgang
 {
     [Activity(Label = "TourActivity")]
-    public class Activity1 : Activity
+    public class TourActivity : Activity
     {
         RecyclerView mRecyclerView;
         RecyclerView.LayoutManager mLayoutManager;
