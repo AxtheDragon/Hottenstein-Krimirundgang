@@ -102,7 +102,7 @@ namespace Krimirundgang
             vh.Preview.Text = mTour[position].Preview;
         }
 
-        // Return the number of photos available in the photo album:
+        // Return the number of stops available in the tour:
         public override int ItemCount
         {
             get { return mTour.NumStops; }
