@@ -49,7 +49,7 @@ namespace Krimirundgang
         }
     }
 
-    public class StopViewHolder : Java.Lang.Object
+    public class StopViewHolder : RecyclerView.ViewHolder
     {
         public TextView Title { get; private set; }
         public TextView Preview { get; private set; }
