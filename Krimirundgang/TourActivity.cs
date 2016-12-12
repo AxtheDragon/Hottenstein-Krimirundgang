@@ -79,8 +79,7 @@ namespace Krimirundgang
         }
 
         // Create a new Stop CardView (invoked by the layout manager): 
-        public override RecyclerView.ViewHolder
-            OnCreateViewHolder(ViewGroup parent, int viewType)
+        public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             // Inflate the CardView for the photo:
             View itemView = LayoutInflater.From(parent.Context).
@@ -93,8 +92,7 @@ namespace Krimirundgang
         }
 
         // Fill in the contents of the Stop card (invoked by the layout manager):
-        public override void
-            OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
+        public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             StopViewHolder vh = holder as StopViewHolder;
 
