@@ -53,7 +53,10 @@ namespace Krimirundgang
 
         void OnItemClick(object sender, EventArgs e)
         {
+            var stop = (Stop)sender;
+
             Intent intent = new Intent(this, typeof(StopActivity));
+            intent.PutExtra("StopId", stop.StopID);
             StartActivity(intent);
         }
     }
