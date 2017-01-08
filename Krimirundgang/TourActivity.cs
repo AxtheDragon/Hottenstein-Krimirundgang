@@ -34,6 +34,9 @@ namespace Krimirundgang
             //Prepare Adapter and pass it its contents
             mAdapter = new TourAdapter(mTour);
 
+            // Register the item click handler (below) with the adapter:
+            mAdapter.ItemClick += OnItemClick;
+
             // Set our view from the "Tour" layout resource
             SetContentView(Resource.Layout.Tour);
 
@@ -46,6 +49,13 @@ namespace Krimirundgang
             //Initialize Layout Manager
             mLayoutManager = new LinearLayoutManager(this);
             mRecyclerView.SetLayoutManager(mLayoutManager);
+         }
+
+        void OnItemClick(object sender, int position)
+        {
+            // Display a toast that briefly shows the enumeration of the selected photo:
+            int photoNum = position + 1;
+            Toast.MakeText(this, "This is photo number " + photoNum, ToastLength.Short).Show();
         }
     }
 }
