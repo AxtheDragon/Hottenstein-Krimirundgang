@@ -18,11 +18,15 @@ namespace Krimirundgang
         public TextView Title { get; private set; }
         public TextView Preview { get; private set; }
 
-        public StopViewHolder(View itemView) : base(itemView)
+        public StopViewHolder(View itemView, Action<int> listener) : base(itemView)
         {
             // Locate and cache view references:
             Title = itemView.FindViewById<TextView>(Resource.Id.textView1);
             Preview = itemView.FindViewById<TextView>(Resource.Id.textView2);
+
+            // Detect user clicks on the item view and report which item
+            // was clicked (by position) to the listener:
+            itemView.Click += (sender, e) => listener(base.Position);
         }
     }
 }
