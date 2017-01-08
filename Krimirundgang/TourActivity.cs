@@ -51,9 +51,10 @@ namespace Krimirundgang
             mRecyclerView.SetLayoutManager(mLayoutManager);
          }
 
-        void OnItemClick(object sender, EventArgs e)
+        void OnItemClick(object sender, int position)
         {
-            var stop = (Stop)sender;
+            var tourAdapter = (TourAdapter)sender;
+            var stop = tourAdapter.mTour[position];
 
             Intent intent = new Intent(this, typeof(StopActivity));
             intent.PutExtra("StopId", stop.StopID);
