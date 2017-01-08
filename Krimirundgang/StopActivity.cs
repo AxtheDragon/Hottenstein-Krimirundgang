@@ -22,6 +22,13 @@ namespace Krimirundgang
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Stop);
 
+            //Get references for Layout elements
+            TextView title = FindViewById<TextView>(Resource.Id.textViewTitle);
+            TextView longitude = FindViewById<TextView>(Resource.Id.textViewLong);
+            TextView latitude = FindViewById<TextView>(Resource.Id.textViewLat);
+            TextView text = FindViewById<TextView>(Resource.Id.textViewText);
+
+            title.Text = "Blub";
 
         }
     }
