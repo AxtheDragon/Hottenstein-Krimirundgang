@@ -55,5 +55,12 @@ namespace Krimirundgang
             get { return mTour.NumStops; }
         }
 
+        // Raise an event when the item-click takes place:
+        void OnClick(int position)
+        {
+            if (ItemClick != null)
+                ItemClick(this, position);
+        }
+
     }
 }
