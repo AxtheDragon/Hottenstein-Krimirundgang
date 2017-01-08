@@ -60,13 +60,15 @@ namespace Krimirundgang
         };
 
         //Array of the Stops that make up the Tour
-        private Stop[] mStops;
+        private readonly Stop[] mStops;
 
         //Create and instance copy of the StopList
         public Tour()
         {
             mStops = mStopList;
         }
+
+        public Stop[] Stops { get; private set; }
 
         //Indexer (read only) for accessing the Stops
         public Stop this[int i]

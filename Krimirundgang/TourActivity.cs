@@ -51,7 +51,7 @@ namespace Krimirundgang
             mRecyclerView.SetLayoutManager(mLayoutManager);
          }
 
-        void OnItemClick(object sender, EventArgs e))
+        void OnItemClick(object sender, EventArgs e)
         {
             Intent intent = new Intent(this, typeof(StopActivity));
             StartActivity(intent);
