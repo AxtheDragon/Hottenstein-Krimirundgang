@@ -16,7 +16,7 @@ namespace Krimirundgang
     public class TourAdapter : RecyclerView.Adapter
     {
         // Event handler for item clicks:
-        public event EventHandler<int> ItemClick;
+        public event EventHandler<EventArgs> ItemClick;
 
         // Underlying data set (a Tour:
         public Tour mTour;
