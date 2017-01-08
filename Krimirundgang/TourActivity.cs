@@ -51,11 +51,10 @@ namespace Krimirundgang
             mRecyclerView.SetLayoutManager(mLayoutManager);
          }
 
-        void OnItemClick(object sender, int position)
+        void OnItemClick(object sender, EventArgs e)
         {
-            // Display a toast that briefly shows the enumeration of the selected photo:
-            int photoNum = position + 1;
-            Toast.MakeText(this, "This is photo number " + photoNum, ToastLength.Short).Show();
+            Intent intent = new Intent(this, typeof(StopActivity));
+            StartActivity(intent);
         }
     }
 }
