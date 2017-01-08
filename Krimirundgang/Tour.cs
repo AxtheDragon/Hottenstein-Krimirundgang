@@ -70,7 +70,7 @@ namespace Krimirundgang
 
         public Stop[] Stops
         {
-            get { return mStops; }
+            get { return (Stop[])mStops.Clone(); }
         }
 
         //Indexer (read only) for accessing the Stops
