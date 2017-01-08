@@ -68,7 +68,10 @@ namespace Krimirundgang
             mStops = mStopList;
         }
 
-        public Stop[] Stops { get; private set; }
+        public Stop[] Stops
+        {
+            get { return mStops; }
+        }
 
         //Indexer (read only) for accessing the Stops
         public Stop this[int i]
