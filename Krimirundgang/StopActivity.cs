@@ -12,8 +12,8 @@ using Android.Widget;
 
 namespace Krimirundgang
 {
-    [Activity(Label = "Activity1")]
-    public class Activity1 : Activity
+    [Activity(Label = "StopActivity")]
+    public class StopActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
