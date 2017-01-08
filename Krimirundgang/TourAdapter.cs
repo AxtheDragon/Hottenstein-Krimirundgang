@@ -16,7 +16,7 @@ namespace Krimirundgang
     public class TourAdapter : RecyclerView.Adapter
     {
         // Event handler for item clicks:
-        // public event EventHandler<int> ItemClick;
+        public event EventHandler<int> ItemClick;
 
         // Underlying data set (a Tour:
         public Tour mTour;
@@ -27,7 +27,7 @@ namespace Krimirundgang
             mTour = myTour;
         }
 
-        // Create a new Stop CardView (invoked by the layout manager):
+       // Create a new Stop CardView (invoked by the layout manager):
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             // Inflate the StopCardView for the title:
