@@ -31,15 +31,11 @@ namespace Krimirundgang
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             // Inflate the StopCardView for the title:
-            View itemView =
-                LayoutInflater.From(parent.Context)
-                              .Inflate(Resource.Layout.StopCardView,
-                                       parent,
-                                       false);
+            View itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.StopCardView,parent,false);
 
             // Create a ViewHolder to find and hold these view references, and
             // register OnClick with the view holder:
-            return new StopViewHolder(itemView);
+            return new StopViewHolder(itemView, OnClick);
         }
 
         // Fill in the contents of the Stop card (invoked by the layout manager):
