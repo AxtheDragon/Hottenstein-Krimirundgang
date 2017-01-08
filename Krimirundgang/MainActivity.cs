@@ -30,6 +30,7 @@ namespace Krimirundgang
             Button firstButton = FindViewById<Button>(Resource.Id.button1);
             TextView text = FindViewById<TextView>(Resource.Id.textView1);
             Button secondPageButton = FindViewById<Button>(Resource.Id.next);
+            Button startTourButton = FindViewById<Button>(Resource.Id.buttonStart);
 
             //Simple Button click event
             firstButton.Click += (object sender, EventArgs e) =>
@@ -38,10 +39,16 @@ namespace Krimirundgang
             };
 
             //Event for second Button
-            //shows second page but does not yet load secondActivity.cs
             secondPageButton.Click += (object sender, EventArgs e) =>
             {
                 Intent intent = new Intent(this, typeof(secondActivity));
+                StartActivity(intent);
+            };
+
+            //Event for startTourButton
+            startTourButton.Click += (object sender, EventArgs e) =>
+            {
+                Intent intent = new Intent(this, typeof(TourActivity));
                 StartActivity(intent);
             };
         }
