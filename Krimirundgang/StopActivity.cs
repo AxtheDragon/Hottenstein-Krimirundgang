@@ -22,7 +22,7 @@ namespace Krimirundgang
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Stop);
 
-            int stopID = Intent.GetIntExtra("StopID", 1);
+            int stopID = savedInstanceState.GetInt("selected_stop", 1);
             Stop stop = new Tour().Stops.First(s => s.StopID == stopID);
 
             //Get references for Layout elements
