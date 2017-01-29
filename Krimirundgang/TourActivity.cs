@@ -70,7 +70,7 @@ namespace Krimirundgang
             //var stop = tourAdapter.mTour[position];
 
             outState.PutInt("selected_stop", SelectedStopID);
-            Log.Debug(GetType().FullName, "Activity A - Saving instance state");
+            //Log.Debug(GetType().FullName, "Activity A - Saving instance state");
 
             // always call the base implementation!
             base.OnSaveInstanceState(outState);

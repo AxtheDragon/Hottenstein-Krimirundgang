@@ -40,7 +40,7 @@ namespace Krimirundgang
 
         public Stop(int stopId, string title, double lat, double longitude, string text, string preview)
         {
-            mStopID = StopID;
+            mStopID = stopID;
             mTitle = title;
             mLat = lat;
             mLong = longitude;
