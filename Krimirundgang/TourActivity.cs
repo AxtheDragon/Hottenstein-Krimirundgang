@@ -59,7 +59,7 @@ namespace Krimirundgang
             var stop = tourAdapter.mTour[position];
 
             Intent intent = new Intent(this, typeof(StopActivity));
-            //intent.PutExtra("StopId", stop.StopID);
+            intent.PutExtra("StopId", stop.StopID);
             SelectedStopID = stop.StopID;
             StartActivity(intent);
         }
