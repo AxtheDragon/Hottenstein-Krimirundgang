@@ -59,9 +59,7 @@ namespace Krimirundgang
         void OnClick(int position)
         {
             if (ItemClick != null)
-                {
                 ItemClick(this, position);
-                }
         }
 
     }
