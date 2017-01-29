@@ -59,14 +59,19 @@ namespace Krimirundgang
             var stop = tourAdapter.mTour[position];
 
             Intent intent = new Intent(this, typeof(StopActivity));
+            //intent.PutExtra("StopId", stop.StopID);
             SelectedStopID = stop.StopID;
             StartActivity(intent);
         }
 
         protected override void OnSaveInstanceState(Bundle outState)
         {
+            //var tourAdapter = (TourAdapter)sender;
+            //var stop = tourAdapter.mTour[position];
+
             outState.PutInt("selected_stop", SelectedStopID);
- 
+            //Log.Debug(GetType().FullName, "Activity A - Saving instance state");
+
             // always call the base implementation!
             base.OnSaveInstanceState(outState);
         }
