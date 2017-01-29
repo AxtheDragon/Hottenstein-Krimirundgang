@@ -35,7 +35,6 @@ namespace Krimirundgang
             longitude.Text = stop.Long.ToString();
             latitude.Text = stop.Lat.ToString();
             text.Text = stop.Text;
-
         }
     }
 }
