@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StopActivity.cs" />
     <Compile Include="Stop.cs" />
     <Compile Include="Tour.cs" />
     <Compile Include="StopViewHolder.cs" />
@@ -88,6 +89,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\StopCardView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Stop.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -16,7 +16,7 @@ namespace Krimirundgang
     public class TourAdapter : RecyclerView.Adapter
     {
         // Event handler for item clicks:
-        // public event EventHandler<int> ItemClick;
+        public event EventHandler<int> ItemClick;
 
         // Underlying data set (a Tour:
         public Tour mTour;
@@ -27,19 +27,15 @@ namespace Krimirundgang
             mTour = myTour;
         }
 
-        // Create a new Stop CardView (invoked by the layout manager):
+       // Create a new Stop CardView (invoked by the layout manager):
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             // Inflate the StopCardView for the title:
-            View itemView =
-                LayoutInflater.From(parent.Context)
-                              .Inflate(Resource.Layout.StopCardView,
-                                       parent,
-                                       false);
+            View itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.StopCardView,parent,false);
 
             // Create a ViewHolder to find and hold these view references, and
             // register OnClick with the view holder:
-            return new StopViewHolder(itemView);
+            return new StopViewHolder(itemView, OnClick);
         }
 
         // Fill in the contents of the Stop card (invoked by the layout manager):
@@ -57,6 +53,15 @@ namespace Krimirundgang
         public override int ItemCount
         {
             get { return mTour.NumStops; }
+        }
+
+        // Raise an event when the item-click takes place:
+        void OnClick(int position)
+        {
+            if (ItemClick != null)
+            {
+                ItemClick(this, position);
+            }
         }
 
     }

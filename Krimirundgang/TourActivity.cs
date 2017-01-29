@@ -34,6 +34,9 @@ namespace Krimirundgang
             //Prepare Adapter and pass it its contents
             mAdapter = new TourAdapter(mTour);
 
+            // Register the item click handler (below) with the adapter:
+            mAdapter.ItemClick += OnItemClick;
+
             // Set our view from the "Tour" layout resource
             SetContentView(Resource.Layout.Tour);
 
@@ -46,6 +49,16 @@ namespace Krimirundgang
             //Initialize Layout Manager
             mLayoutManager = new LinearLayoutManager(this);
             mRecyclerView.SetLayoutManager(mLayoutManager);
+         }
+
+        void OnItemClick(object sender, int position)
+        {
+            var tourAdapter = (TourAdapter)sender;
+            var stop = tourAdapter.mTour[position];
+
+            Intent intent = new Intent(this, typeof(StopActivity));
+            intent.PutExtra("StopId", stop.StopID);
+            StartActivity(intent);
         }
     }
 }
