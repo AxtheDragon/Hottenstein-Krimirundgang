@@ -24,6 +24,8 @@ namespace Krimirundgang
 
         Tour mTour;
 
+        private int SelectedStopID;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -57,16 +59,17 @@ namespace Krimirundgang
             var stop = tourAdapter.mTour[position];
 
             Intent intent = new Intent(this, typeof(StopActivity));
-            intent.PutExtra("StopId", stop.StopID);
+            //intent.PutExtra("StopId", stop.StopID);
+            SelectedStopID = stop.StopID;
             StartActivity(intent);
         }
 
         protected override void OnSaveInstanceState(Bundle outState)
         {
-            var tourAdapter = (TourAdapter)sender;
-            var stop = tourAdapter.mTour[position];
+            //var tourAdapter = (TourAdapter)sender;
+            //var stop = tourAdapter.mTour[position];
 
-            outState.PutInt("selected_stop", stop.StopID);
+            outState.PutInt("selected_stop", SelectedStopID);
             Log.Debug(GetType().FullName, "Activity A - Saving instance state");
 
             // always call the base implementation!
