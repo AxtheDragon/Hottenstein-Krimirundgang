@@ -5,6 +5,8 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Gms.Maps;
+using Android.Gms.Maps.Model;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -35,6 +37,14 @@ namespace Krimirundgang
             longitude.Text = stop.Long.ToString();
             latitude.Text = stop.Lat.ToString();
             text.Text = stop.Text;
+
+            MapFragment mapFrag = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.mapFragment);
+            GoogleMap map = mapFrag.Map;
+            if (map != null)
+            {
+                // The GoogleMap object is ready to go.
+                map.MapType = GoogleMap.MapTypeNormal;
+            }
         }
     }
 }

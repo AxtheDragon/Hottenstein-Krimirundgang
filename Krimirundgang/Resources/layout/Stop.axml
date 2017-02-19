@@ -9,6 +9,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewTitle" />
+    <fragment
+        android:name=""
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="319.5dp"
+        android:id="@+id/mapFragment" />
     <TextView
         android:text="Longitude"
         android:layout_width="match_parent"
