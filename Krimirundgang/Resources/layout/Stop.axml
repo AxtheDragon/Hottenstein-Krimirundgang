@@ -9,6 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewTitle" />
+    <fragment
+        android:name=""
+        android:layout_width="match_parent"
+        android:layout_height="397.5dp"
+        android:id="@+id/fragment1" />
     <TextView
         android:text="Longitude"
         android:layout_width="match_parent"
