@@ -39,7 +39,8 @@ namespace Krimirundgang
             text.Text = stop.Text;
 
             MapFragment mapFrag = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.mapFragment);
-            GoogleMap map = mapFrag.Map;
+            // TODO: Add callback for map Async
+            GoogleMap map = mapFrag.GetMapAsync();
             if (map != null)
             {
                 // The GoogleMap object is ready to go.
